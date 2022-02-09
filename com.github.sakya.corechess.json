@@ -50,7 +50,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.9.4.2",
+          "tag": "0.10.0",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
@@ -92,6 +92,82 @@
           "sha256": "13406b1dcbe0a36dfc5e07da51d8db38b7a45d7da43078ec25a7624c2b83236f"
         }
       ]
-    }
+    },
+    {
+      "name": "eigen",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "sources": [
+        {
+          "type": "archive",         
+          "url": "https://gitlab.com/libeigen/eigen/-/archive/3.3.8/eigen-3.3.8.tar.gz",
+          "sha256": "146a480b8ed1fb6ac7cd33fec9eb5e8f8f62c3683b3f850094d9d5c35a92419a"
+        }
+      ]
+    },  
+    {
+      "name": "openblas",
+      "no-autogen": true,
+      "make-args": [
+        "DYNAMIC_ARCH=1",
+        "FC=gfortran",
+        "NO_LAPACKE=1",
+        "USE_OPENMP=0"        
+      ],
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "archive",         
+          "url": "https://github.com/xianyi/OpenBLAS/archive/v0.3.19.tar.gz",
+          "sha256": "947f51bfe50c2a0749304fbe373e00e7637600b0a47b78a51382aeb30ca08562"
+        }
+      ]
+    },
+    {
+      "name": "lc0",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dopenblas=true",
+        "-Dopenblas_libdirs=/app/lib",
+        "-Dgtest=false",
+        "-Db_lto=true",
+        "-Dopencl=false"
+      ],
+      "post-install": [
+        "mkdir -p /app/bin/Engines/lc0",
+        "mv /app/bin/lc0 /app/bin/Engines/lc0/"
+      ],
+      "sources": [
+        {
+          "type": "archive",         
+          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.28.2.zip",
+          "sha256": "348d0fb0eeb719febcc3e50ee7018b19a6c13b48491aa43c58a3aee8fbc7d616"
+        },
+        {
+          "type": "archive",
+          "dest": "./libs/lczero-common/",
+          "url": "https://github.com/LeelaChessZero/lczero-common/archive/refs/heads/master.zip",
+          "sha256": "fb47dee14a6d4684be13ce0b1dd667a9539a4887fa3c163776379f055352eeb0"
+        }
+      ]
+    },
+    {
+      "name": "nn",    
+      "buildsystem": "simple",
+      "build-commands": [
+        "mkdir -p /app/bin/Engines/lc0",      
+        "mv nn /app/bin/Engines/lc0/"
+      ],
+      "sources": [
+        {
+          "type": "file",      
+          "dest-filename": "nn",
+          "url": "https://training.lczero.org/get_network?sha=0f2f738e314bf618384045d4320a55333375d273d093adb805a4268ee53b519c",
+          "sha256": "5cf80e9e5091134241235400366c6c46c8b1613b07b98243f4e4dcc691bf47ae"
+        }
+      ]      
+    }    
   ]
 }
