@@ -50,7 +50,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.10.0",
+          "tag": "0.10.1",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
@@ -116,6 +116,9 @@
       ],
       "make-install-args": [
         "PREFIX=/app"
+      ],
+      "post-install": [
+        "rm /app/lib/*.a"
       ],
       "sources": [
         {
