@@ -13,7 +13,9 @@
   ],
   "command": "CoreChess",
   "finish-args": [
-    "--filesystem=home",
+    "--filesystem=xdg-documents",
+    "--filesystem=xdg-pictures",
+    "--share=ipc",
     "--socket=x11",
     "--socket=pulseaudio",
     "--device=dri"
