@@ -57,7 +57,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.10.4.1",
+          "tag": "0.10.5",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
@@ -100,6 +100,7 @@
         }
       ]
     },
+
     {
       "name": "eigen",
       "buildsystem": "cmake-ninja",
@@ -176,6 +177,31 @@
           "dest-filename": "nn",
           "url": "https://training.lczero.org/get_network?sha=0f2f738e314bf618384045d4320a55333375d273d093adb805a4268ee53b519c",
           "sha256": "5cf80e9e5091134241235400366c6c46c8b1613b07b98243f4e4dcc691bf47ae"
+        }
+      ]
+    },
+
+    {
+      "name": "gnuchess",
+      "build-options": {
+        "ldflags": "-Wl,--allow-multiple-definition",
+        "arch": {
+          "aarch64": {
+            "config-opts": [
+              "--build=arm"
+            ]
+          }
+        }
+      },
+      "post-install": [
+        "mkdir -p /app/bin/Engines/gnuchess",
+        "mv /app/bin/gnuchess /app/bin/Engines/gnuchess/"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://ftp.gnu.org/gnu/chess/gnuchess-6.2.9.tar.gz",
+          "sha256": "ddfcc20bdd756900a9ab6c42c7daf90a2893bf7f19ce347420ce36baebc41890"
         }
       ]
     }
