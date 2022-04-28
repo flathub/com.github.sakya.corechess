@@ -183,20 +183,6 @@
   },
   {
     "type": "file",
-    "url": "https://api.nuget.org/v3-flatcontainer/Microsoft.NETCore.App.Crossgen2.linux-arm64/6.0.4/Microsoft.NETCore.App.Crossgen2.linux-arm64.6.0.4.nupkg",
-    "sha512": "01cd3f7d6c726c89c69b40a2123d593de89563a7970fd42522ebe1d72e6d6bc9e6a1d5b664e9f17997d1eda9ee79743d2ca6744d61cc9ed16d6a3ba7449f15a1",
-    "dest": "nuget-sources",
-    "dest-filename": "Microsoft.NETCore.App.Crossgen2.linux-arm64.6.0.4.nupkg"
-  },
-  {
-    "type": "file",
-    "url": "https://api.nuget.org/v3-flatcontainer/Microsoft.NETCore.App.Crossgen2.linux-x64/6.0.4/Microsoft.NETCore.App.Crossgen2.linux-x64.6.0.4.nupkg",
-    "sha512": "eba4cff53503c237b51c8b3c27025b840aa4efd8a72020a0d5ec3d90bf3d6baa0bffa3e4c97723db8899c09002ee4da047fa9410c6c6267efe3ffee0216c6c7b",
-    "dest": "nuget-sources",
-    "dest-filename": "Microsoft.NETCore.App.Crossgen2.linux-x64.6.0.4.nupkg"
-  },
-  {
-    "type": "file",
     "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.host.linux-x64/6.0.4/microsoft.netcore.app.host.linux-x64.6.0.4.nupkg",
     "sha512": "32c7a28cb81413032a6f1a9d141b61b36f847a568b40a28e7f911e49e6665d3ce42e4518e8b5905b6e77176f1958d0ee785f018ad98947c9a10f14bf14d3fd69",
     "dest": "nuget-sources",
