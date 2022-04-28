@@ -90,13 +90,13 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_14.1.zip",
-          "sha256": "af12a17c2a41b8ab0ff6863c32bcaa05087ae7544b2df5d4530be6746977febb"
+          "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_15.zip",
+          "sha256": "c5f5175a664ddad7ac0f0174d0b77376e22b7335183daaa02b48b45a18889d7f"
         },
         {
           "type": "file",
-          "url": "https://tests.stockfishchess.org/api/nn/nn-13406b1dcbe0.nnue",
-          "sha256": "13406b1dcbe0a36dfc5e07da51d8db38b7a45d7da43078ec25a7624c2b83236f"
+          "url": "https://tests.stockfishchess.org/api/nn/nn-6877cd24400e.nnue",
+          "sha256": "6877cd24400e01b19ff12ae3068ae242152802bdd330e66f7b6703865251d6e3"
         }
       ]
     },
