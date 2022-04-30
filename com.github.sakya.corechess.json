@@ -57,7 +57,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.11.1.2",
+          "tag": "0.11.1.4",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
