@@ -1,7 +1,7 @@
 {
   "app-id": "com.github.sakya.corechess",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "21.08",
+  "runtime-version": "22.08",
   "sdk": "org.freedesktop.Sdk",
   "sdk-extensions": [
     "org.freedesktop.Sdk.Extension.dotnet6"
@@ -57,7 +57,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.13.0.0",
+          "tag": "0.14.0.0",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
