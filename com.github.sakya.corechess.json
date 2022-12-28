@@ -57,7 +57,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.14.0.0",
+          "tag": "0.15.0.0",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
@@ -85,18 +85,18 @@
         "cd src; make -j build ARCH=$ARCH",
         "mkdir -p /app/bin/Engines/stockfish",
         "cp ./src/stockfish /app/bin/Engines/stockfish/",
-        "cp ./nn-6877cd24400e.nnue /app/bin/Engines/stockfish"
+        "cp ./nn-ad9b42354671.nnue /app/bin/Engines/stockfish"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_15.zip",
-          "sha256": "c5f5175a664ddad7ac0f0174d0b77376e22b7335183daaa02b48b45a18889d7f"
+          "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_15.1.zip",
+          "sha256": "5174e4247f4c107648c9f7c906d5e9733abc61c6dae047be570cee2b930f0339"
         },
         {
           "type": "file",
-          "url": "https://tests.stockfishchess.org/api/nn/nn-6877cd24400e.nnue",
-          "sha256": "6877cd24400e01b19ff12ae3068ae242152802bdd330e66f7b6703865251d6e3"
+          "url": "https://tests.stockfishchess.org/api/nn/nn-ad9b42354671.nnue",
+          "sha256": "ad9b423546714137916bd38978af6fd68d7b8951bef25ff76bf43da72d6cb786"
         }
       ]
     },
