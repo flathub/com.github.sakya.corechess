@@ -4,7 +4,7 @@
   "runtime-version": "22.08",
   "sdk": "org.freedesktop.Sdk",
   "sdk-extensions": [
-    "org.freedesktop.Sdk.Extension.dotnet6"
+    "org.freedesktop.Sdk.Extension.dotnet7"
   ],
   "cleanup": [
     "/include",
@@ -24,10 +24,10 @@
       "name": "CoreChess",
       "buildsystem": "simple",
       "build-options": {
-        "append-path": "/usr/lib/sdk/dotnet6/bin",
-        "append-ld-library-path": "/usr/lib/sdk/dotnet6/lib",
+        "append-path": "/usr/lib/sdk/dotnet7/bin",
+        "append-ld-library-path": "/usr/lib/sdk/dotnet7/lib",
         "env": {
-          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet6/lib/pkgconfig"
+          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet7/lib/pkgconfig"
         },
         "arch": {
           "x86_64": {
