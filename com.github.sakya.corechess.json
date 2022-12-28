@@ -80,7 +80,7 @@
         }
       },
       "build-commands": [
-        "cp nn-6877cd24400e.nnue ./src",
+        "cp nn-ad9b42354671.nnue ./src",
         "cd src; make -j build ARCH=$ARCH",
         "mkdir -p /app/bin/Engines/stockfish",
         "cp ./src/stockfish /app/bin/Engines/stockfish/",
