@@ -1,10 +1,10 @@
 [
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia/0.10.18",
-    "sha512": "bfa398495373162d13add9a15c4b65016a08b5405206d45225952ac202ad66fa7e5d157ce3bbf19d78b00389a33e32dee697884144b0678af7f61508826ceb5c",
+    "url": "https://www.nuget.org/api/v2/package/avalonia/0.10.19",
+    "sha512": "5b83a07cb8c584659db69226455576cfc1f07bea4a467266126750a5fbe1a7c6d9e58868473045cad770a609985ea4c055b3ab98cba3147c0eb68be4665105fd",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.0.10.18.nupkg"
+    "dest-filename": "avalonia.0.10.19.nupkg"
   },
   {
     "type": "file",
@@ -15,66 +15,66 @@
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.controls.datagrid/0.10.18",
-    "sha512": "44f28349f55156448fea48ea5999d13cc7ab23ed4105ddeccf8b4ee8bb9f05dafe6be3a9375db843758eab17cf3a0efb282ab76896cd6befbfa887c7bc9231ee",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.controls.datagrid/0.10.19",
+    "sha512": "1aec9501df6e7570802882ee226f8e8d2b588ea0e97d49c36b7028ac36e32f92a99d242a59c8829a068c08308dc2bf8abf7060e9adbb9c4e4068a694394289ea",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.controls.datagrid.0.10.18.nupkg"
+    "dest-filename": "avalonia.controls.datagrid.0.10.19.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.desktop/0.10.18",
-    "sha512": "c33d01e4e766a1bdcf642100bff4cf1c5a868736375a2dd5305c131e265e1cfe69a0d1b2ea4f83104434a066cee33c391bd5968b707ad0699992c0b1662ff118",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.desktop/0.10.19",
+    "sha512": "971b67d9f41eaeab96fdcdec3265552b6002040a7bea890186c1e301c8ddf4dddf435f82223f436e3c363b6832410cf7dea9f423f5f0dcede4496da5f5a06f82",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.desktop.0.10.18.nupkg"
+    "dest-filename": "avalonia.desktop.0.10.19.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.diagnostics/0.10.18",
-    "sha512": "14ba2ec4aa8ca1756d8a766b48af226fc978502656dff50789bceb064112fb6c4ca7db492f3ebf66fb40b49a9e96d1b8ccafca12587691e2f1b2d57cc5a8d756",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.diagnostics/0.10.19",
+    "sha512": "a372cc77b38500e28b8be4e4509ff9d6d9e412370e0128f68639198cd2f644860fcdd72f3abf58a4e08a13bbce851943047efac087fcd5151eda0f210fbc5192",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.diagnostics.0.10.18.nupkg"
+    "dest-filename": "avalonia.diagnostics.0.10.19.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.freedesktop/0.10.18",
-    "sha512": "ce5edac45a9069ec62cbb843ad4ae310ad407785b6ad8afe23bf98c6b28ab9b6d067f313f0432db605e0c9e444ceaad8f77f7dda1839bd3e97da635cbd9e6afa",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.freedesktop/0.10.19",
+    "sha512": "690b14c6bccfae39deda14ab3240b958baa4aefcd54dfc9e5c8f903c8afe0caae918b5cb1967be63f58f396723bddc5429c00763364163f1e75fc38b8d24d466",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.freedesktop.0.10.18.nupkg"
+    "dest-filename": "avalonia.freedesktop.0.10.19.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.native/0.10.18",
-    "sha512": "9bba27cbd6b0082157ed3f5c3d8d02a11f98e4148aef11062daee11c4f763919e89e1bbe124581bcfd611151faecc037835f38099ee026467e5c07ce094ba522",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.native/0.10.19",
+    "sha512": "c833401aa691252a45405ccfa5c9fc1f5009dd06c0a80f13aea9030dc87b5faa53fb0733bb5f4398576374609b1fced20a0c25e3dbfb7ae2b9c09bcf966e9d4f",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.native.0.10.18.nupkg"
+    "dest-filename": "avalonia.native.0.10.19.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.remote.protocol/0.10.18",
-    "sha512": "3d4ccc0821212b7e13dce1a7bdd2fd616ad18c111989389080cd95922198ed3aa57617740aff08c77c15f65c5790373be752614fe2956efbbeb133a2f9b2d358",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.remote.protocol/0.10.19",
+    "sha512": "3a792cab1b6ae0397e5b166501a201a79d04fda610effb9737f0e32e1801238c0a2efbb718ba693c41a7a6ba79f33b3b6ea136cf81c01a1fadf1b0334afc708f",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.remote.protocol.0.10.18.nupkg"
+    "dest-filename": "avalonia.remote.protocol.0.10.19.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.skia/0.10.18",
-    "sha512": "eb60286c911526e60366e21aa3f99a439a916144f24ec99e050007f125cc8e45bafd9963bdd6cc4c897f35369aefacfb42976fff5ba795c80b0405027523fa7c",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.skia/0.10.19",
+    "sha512": "373e98b360f0ed9c3e48a92bd220701543872c2d9f85d6b3a289536ad2cf36cd7aa4c7e43ba89f8b6a34525ddcfb36bf561bf5ed92494e63cb6e9d017f1352a1",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.skia.0.10.18.nupkg"
+    "dest-filename": "avalonia.skia.0.10.19.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.win32/0.10.18",
-    "sha512": "4d5218edbb80420c9b90052bc1a6ecff2d8bb05598fb9bf93c7496ac196de4d3b83d3b52c286a1ccfa3c68117df32fb9789c492f8abb90c4bb457e108908a58d",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.win32/0.10.19",
+    "sha512": "c321db34655a4e19ea5c1ecebe093cf02df746cedc6f6e61a3677f7c6d87214e260d24d2781351597b14e4c55af17e4b6b5fee3073202e3d882ccfa532348ec8",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.win32.0.10.18.nupkg"
+    "dest-filename": "avalonia.win32.0.10.19.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/avalonia.x11/0.10.18",
-    "sha512": "3dd443fb5436c7362eac851527a08710a5d02d9fcca93b8d1667dcb2d9e477ef814e674285eef415cc52ac98f22b6cfe1f364462fc064052b0de666778acd4da",
+    "url": "https://www.nuget.org/api/v2/package/avalonia.x11/0.10.19",
+    "sha512": "644ea3c0a2326e4411cb0036bb030fa17d0f2d311d91faf7974781a9224a59f70a84f293fffe657ca67883653c47b4884bd5e073be4b957382107a0ca7a6a4ce",
     "dest": "nuget-sources",
-    "dest-filename": "avalonia.x11.0.10.18.nupkg"
+    "dest-filename": "avalonia.x11.0.10.19.nupkg"
   },
   {
     "type": "file",
@@ -127,24 +127,31 @@
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/microsoft.aspnetcore.app.ref/7.0.1",
-    "sha512": "93e439a8ec9384bb5c3fde6d5501c7ac31a0b8494d6813389455c599c966bc1b8915d6f8d88406e77337b075237c0e15f3fd9e6fa4a46b589b8e008063d632a4",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.aspnetcore.app.ref/7.0.3",
+    "sha512": "b74c5f0befb1385a274bc8d66e08c246014f78b72434a5a9e0557fd26d2d7f5fa53a3c56a65ce39065a7385a001911629df064037d02641cdaf7b3fd519e01fa",
     "dest": "nuget-sources",
-    "dest-filename": "microsoft.aspnetcore.app.ref.7.0.1.nupkg"
+    "dest-filename": "microsoft.aspnetcore.app.ref.7.0.3.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/microsoft.aspnetcore.app.runtime.linux-arm64/7.0.1",
-    "sha512": "6118682a2978748205478db312ce64593e1b171a6afe28a443d3539aeaabf6d886370ff03462b31493a206849ed6587ec044e075d2e0e5db829f55a143c09a43",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.aspnetcore.app.runtime.linux-arm64/7.0.5",
+    "sha512": "ee24fd027ee33f3d2fb4f571d141da02b66b994dec40c7ae1c485a85adb9a442a04b9590a495ae2fbd61c334cb10d21a633f6937babc6ca903a88cf3e379ba47",
     "dest": "nuget-sources",
-    "dest-filename": "microsoft.aspnetcore.app.runtime.linux-arm64.7.0.1.nupkg"
+    "dest-filename": "microsoft.aspnetcore.app.runtime.linux-arm64.7.0.5.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/microsoft.aspnetcore.app.runtime.linux-x64/7.0.1",
-    "sha512": "c33828b32f4b8a957a877329d38b5677fa1fe25f38192484bcafe7adfe669c8bd2f5d9cfc920fd1f1932f5d35160677243d8a6a33c98de1cca7369a1bf9b0bce",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.aspnetcore.app.runtime.linux-x64/7.0.3",
+    "sha512": "5d5260808836083ea348d5c99e5f447eef0de117672c3b00113874e1f3b25c7eca7ae0036a10a167f788cbf5953ddaa9f3a84f9ea9944dca079b7a44c4aa7ad6",
     "dest": "nuget-sources",
-    "dest-filename": "microsoft.aspnetcore.app.runtime.linux-x64.7.0.1.nupkg"
+    "dest-filename": "microsoft.aspnetcore.app.runtime.linux-x64.7.0.3.nupkg"
+  },
+  {
+    "type": "file",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.aspnetcore.app.runtime.linux-x64/7.0.5",
+    "sha512": "edf2e134549550574dc753a075e359871be6c0c881527a6242394171958617c345ddaa8c5fab5b1d4b180e384842960e37e3998459ee642189c7b6c68aa6d7d9",
+    "dest": "nuget-sources",
+    "dest-filename": "microsoft.aspnetcore.app.runtime.linux-x64.7.0.5.nupkg"
   },
   {
     "type": "file",
@@ -190,45 +197,52 @@
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App.Crossgen2.linux-arm64/7.0.1",
-    "sha512": "11fdf3b1404f2cdaa01db8aef53fbf941cba3b4f8cabe1d75bd2b5062ee1258c502f618510d81fda29591e8ba9ba8db04c5f4f5348473143dadc5c7fb31c5983",
+    "url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App.Crossgen2.linux-arm64/7.0.5",
+    "sha512": "a489d5f9ab989756e9a9a402599a3010e7236608b6c81159520b2adea7f0255c6ba7da65218ddf7ba22c5df054b0def5e71afbe0c5c2edee6d9e48baefaadaea",
     "dest": "nuget-sources",
-    "dest-filename": "Microsoft.NETCore.App.Crossgen2.linux-arm64.7.0.1.nupkg"
+    "dest-filename": "Microsoft.NETCore.App.Crossgen2.linux-arm64.7.0.5.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App.Crossgen2.linux-x64/7.0.1",
-    "sha512": "76479bb6958435b5453fa647170ede2b9777fae2a4fd5fd9d0046b68b6135aa20f34b9418796b64ec9b97e31a444f90088ffd43c730581272f22848b96bfbcb6",
+    "url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App.Crossgen2.linux-x64/7.0.5",
+    "sha512": "fe383eee38ba63cc4e416e574ee8fbbc1b7c0a413f0cf9755ed526767ccda0fb3fe93d48b15732f2a3d03f940fa00af1dd6d041ce1f11f68cfdfd9df86594bd4",
     "dest": "nuget-sources",
-    "dest-filename": "Microsoft.NETCore.App.Crossgen2.linux-x64.7.0.1.nupkg"
+    "dest-filename": "Microsoft.NETCore.App.Crossgen2.linux-x64.7.0.5.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.host.linux-x64/7.0.1",
-    "sha512": "caa65e440ffaf7b7f5a5f95d534e2cbbb7b4e26ed4813268b1a0eaed66f1aabe49ecaeccd9adc939bf1580be8022c7862c1db796ef0a73babf90cd221a614b81",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.host.linux-x64/7.0.3",
+    "sha512": "ce3df3390b91fdc50ce752a2adabee84bf029858bb44e60113d2815e9c5c179b0582904a602cc3e6197ece9743b3d0d9832020ab3114ccd3f49a073398d02768",
     "dest": "nuget-sources",
-    "dest-filename": "microsoft.netcore.app.host.linux-x64.7.0.1.nupkg"
+    "dest-filename": "microsoft.netcore.app.host.linux-x64.7.0.3.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.runtime.linux-arm/7.0.1",
-    "sha512": "bb6fd7f9dff0666582cd3d122fe87e0c1082d4e62f2be6f4cc9d42b7c4d7ac54eb0ddc8400dc008bc1955d851683f07e64a9ca09aa8c810b78618bb91ca411da",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.runtime.linux-arm/7.0.5",
+    "sha512": "b5190ef75194ab0eb468490fb66aa31225cb982846bafcfe24120e9e937118d59f6d133685a41bd94129b0646264044c3fbf375ed6111a1719fd298584c811ba",
     "dest": "nuget-sources",
-    "dest-filename": "microsoft.netcore.app.runtime.linux-arm.7.0.1.nupkg"
+    "dest-filename": "microsoft.netcore.app.runtime.linux-arm.7.0.5.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.runtime.linux-arm64/7.0.1",
-    "sha512": "efb6bcef77e3f26a8b3c9152caa60c47d2b514aa4feb57719f9cd865e7bef6da9d76b5b101e48795eec3c8cb27864e86e4afcab17e8dc249caf49218d14efeb5",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.runtime.linux-arm64/7.0.5",
+    "sha512": "68333bc5e936477c387696245f4131c6b14f392f34d0acd4c7a938de1518e7243cd7d65f82d9394c02a2e0198d39d436dff4b0872e6b6580b81c8d6d128ea18b",
     "dest": "nuget-sources",
-    "dest-filename": "microsoft.netcore.app.runtime.linux-arm64.7.0.1.nupkg"
+    "dest-filename": "microsoft.netcore.app.runtime.linux-arm64.7.0.5.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.runtime.linux-x64/7.0.1",
-    "sha512": "3af5711902471ccd0f663419a4255c93bac3cd84243fb9fe6a3d73dccdec4d10cd454277c83ce1a8f25b02924cadebee7e57e866086082184961c3697351b1b7",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.runtime.linux-x64/7.0.3",
+    "sha512": "8e82d6cc1c72b1fb098e857d66e9a0445ac99f66d9f94ecdb5c68f398bf71f95783982c7e33f8ca0869778fcba8e9f3d78dacd93003c715f11fa5f987fff10ac",
     "dest": "nuget-sources",
-    "dest-filename": "microsoft.netcore.app.runtime.linux-x64.7.0.1.nupkg"
+    "dest-filename": "microsoft.netcore.app.runtime.linux-x64.7.0.3.nupkg"
+  },
+  {
+    "type": "file",
+    "url": "https://www.nuget.org/api/v2/package/microsoft.netcore.app.runtime.linux-x64/7.0.5",
+    "sha512": "3b27892f653aaa797fdef286ad57365dcb1a8ce403e0baa924f22b76f8a686a502024022d5c9d04548fba16e38ebc4395b732b9605b2a346b1cb050d7c52d53e",
+    "dest": "nuget-sources",
+    "dest-filename": "microsoft.netcore.app.runtime.linux-x64.7.0.5.nupkg"
   },
   {
     "type": "file",
@@ -288,31 +302,31 @@
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/newtonsoft.json/13.0.2",
-    "sha512": "d743ae673bac17fdbf53c05983dba2ffdb99d7e6af8cf5fe008d57aa30b6c6ca615d672c4140eec516e529eb6ad5acf29c20b5cc059c86f98c80865652acdde1",
+    "url": "https://www.nuget.org/api/v2/package/newtonsoft.json/13.0.3",
+    "sha512": "99b252bc77d1c5f5f7b51fd4ea7d5653e9961d7b3061cf9207f8643a9c7cc9965eebc84d6467f2989bb4723b1a244915cc232a78f894e8b748ca882a7c89fb92",
     "dest": "nuget-sources",
-    "dest-filename": "newtonsoft.json.13.0.2.nupkg"
+    "dest-filename": "newtonsoft.json.13.0.3.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/octokit/4.0.3",
-    "sha512": "25a30be3808c1c585d82fc4cb1cccef5b911870f4080f3a131012305ddf64d2759e9a5a2b6e80706bbf17963c19c6ad9771887cd634dafbf9eba688352026faf",
+    "url": "https://www.nuget.org/api/v2/package/octokit/6.0.0",
+    "sha512": "92d42622529811f4a0a7a6541ea6a6df9249496a6f2923c77710bb339414d6e67d3c2753eaf383492c7d6951408fabd89316a72109bbaba746ea05061384f270",
     "dest": "nuget-sources",
-    "dest-filename": "octokit.4.0.3.nupkg"
+    "dest-filename": "octokit.6.0.0.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/projektanker.icons.avalonia/5.8.0",
-    "sha512": "d306704482ac97a83fc7453af400cc0d30420a9b33cb221faac3a36e2ca9e1ab3435522d4916856c8e54b622ebc606eb8bf8b51eac2503e17faa0676be882734",
+    "url": "https://www.nuget.org/api/v2/package/projektanker.icons.avalonia/5.13.0",
+    "sha512": "3eae5acbba5383234f6fac5b4981e968e28a9d03524925d0ca84638f6d22149df329c1c7cc400a98e7b63d7054bea979d4848bb3ffd11b91554f3c5dc49709f8",
     "dest": "nuget-sources",
-    "dest-filename": "projektanker.icons.avalonia.5.8.0.nupkg"
+    "dest-filename": "projektanker.icons.avalonia.5.13.0.nupkg"
   },
   {
     "type": "file",
-    "url": "https://www.nuget.org/api/v2/package/projektanker.icons.avalonia.fontawesome/5.8.0",
-    "sha512": "b731c5f62712d09fd00bc576603a989f893a2c3480594d387faef2e5cc854cdddae897acb13eff36c10032a0fb2d9300c697db8233c85a9818ab7839c14c717a",
+    "url": "https://www.nuget.org/api/v2/package/projektanker.icons.avalonia.fontawesome/5.13.0",
+    "sha512": "3c48ae22e119f1c6a14450f0acee95f75eb8e1ee3ee51c1d6f6218f784a1a182935ae8d6b512bb92218ce81883d1361db42081eac6745a8e13cc27846e6e2b24",
     "dest": "nuget-sources",
-    "dest-filename": "projektanker.icons.avalonia.fontawesome.5.8.0.nupkg"
+    "dest-filename": "projektanker.icons.avalonia.fontawesome.5.13.0.nupkg"
   },
   {
     "type": "file",
