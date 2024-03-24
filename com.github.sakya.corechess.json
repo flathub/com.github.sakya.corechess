@@ -4,7 +4,7 @@
   "runtime-version": "22.08",
   "sdk": "org.freedesktop.Sdk",
   "sdk-extensions": [
-    "org.freedesktop.Sdk.Extension.dotnet7"
+    "org.freedesktop.Sdk.Extension.dotnet8"
   ],
   "cleanup": [
     "/include",
