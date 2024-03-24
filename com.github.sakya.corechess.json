@@ -1,10 +1,10 @@
 {
   "app-id": "com.github.sakya.corechess",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "22.08",
+  "runtime-version": "23.08",
   "sdk": "org.freedesktop.Sdk",
   "sdk-extensions": [
-    "org.freedesktop.Sdk.Extension.dotnet7"
+    "org.freedesktop.Sdk.Extension.dotnet8"
   ],
   "cleanup": [
     "/include",
@@ -24,10 +24,10 @@
       "name": "CoreChess",
       "buildsystem": "simple",
       "build-options": {
-        "append-path": "/usr/lib/sdk/dotnet7/bin",
-        "append-ld-library-path": "/usr/lib/sdk/dotnet7/lib",
+        "append-path": "/usr/lib/sdk/dotnet8/bin",
+        "append-ld-library-path": "/usr/lib/sdk/dotnet8/lib",
         "env": {
-          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet7/lib/pkgconfig"
+          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet8/lib/pkgconfig"
         },
         "arch": {
           "x86_64": {
@@ -56,7 +56,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.18.1.0",
+          "tag": "0.18.2.1",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
@@ -107,8 +107,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.com/libeigen/eigen/-/archive/3.3.8/eigen-3.3.8.tar.gz",
-          "sha256": "146a480b8ed1fb6ac7cd33fec9eb5e8f8f62c3683b3f850094d9d5c35a92419a"
+          "url": "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz",
+          "sha256": "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72"
         }
       ]
     },
@@ -130,8 +130,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/xianyi/OpenBLAS/archive/v0.3.19.tar.gz",
-          "sha256": "947f51bfe50c2a0749304fbe373e00e7637600b0a47b78a51382aeb30ca08562"
+          "url": "https://github.com/xianyi/OpenBLAS/archive/refs/tags/v0.3.23.tar.gz",
+          "sha256": "5d9491d07168a5d00116cdc068a40022c3455bf9293c7cb86a65b1054d7e5114"
         }
       ]
     },
@@ -152,14 +152,14 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.28.2.zip",
-          "sha256": "348d0fb0eeb719febcc3e50ee7018b19a6c13b48491aa43c58a3aee8fbc7d616"
+          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.30.0.zip",
+          "sha256": "6cc94509214204933b21ded9b04545eaa7e21978cbfeea0be2927ba69cb012d8"
         },
         {
           "type": "archive",
           "dest": "./libs/lczero-common/",
           "url": "https://github.com/LeelaChessZero/lczero-common/archive/refs/heads/master.zip",
-          "sha256": "441eac56bf31aa966fd9baeecf2a71a2018475bd7c55310f61462fc7c8f2954c"
+          "sha256": "14aafc9d3ea1008da3a4ccddf0384ef2e40a90a4a30d61626b3a39bee6b2679e"
         }
       ]
     },
