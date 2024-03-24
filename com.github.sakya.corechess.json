@@ -145,6 +145,9 @@
         "-Db_lto=true",
         "-Dopencl=false"
       ],
+      "pre-install": [
+        "git submodule update --force --remote"
+      ],
       "post-install": [
         "mkdir -p /app/bin/Engines/lc0",
         "mv /app/bin/lc0 /app/bin/Engines/lc0/"
