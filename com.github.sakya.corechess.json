@@ -143,7 +143,8 @@
         "-Dopenblas_libdirs=/app/lib",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false"
+        "-Dopencl=false",
+        "-Dcpp_std=c++11"
       ],
       "post-install": [
         "mkdir -p /app/bin/Engines/lc0",
