@@ -130,8 +130,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/xianyi/OpenBLAS/archive/v0.3.19.tar.gz",
-          "sha256": "947f51bfe50c2a0749304fbe373e00e7637600b0a47b78a51382aeb30ca08562"
+          "url": "https://github.com/OpenMathLib/OpenBLAS/archive/refs/tags/v0.3.26.tar.gz",
+          "sha256": "4e6e4f5cb14c209262e33e6816d70221a2fe49eb69eaf0a06f065598ac602c68"
         }
       ]
     },
