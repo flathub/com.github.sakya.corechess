@@ -56,7 +56,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.18.2.0",
+          "tag": "0.18.2.1",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
@@ -143,8 +143,7 @@
         "-Dopenblas_libdirs=/app/lib",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false",
-        "-Dcpp_std=c++11"
+        "-Dopencl=false"
       ],
       "post-install": [
         "mkdir -p /app/bin/Engines/lc0",
