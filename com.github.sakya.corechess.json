@@ -152,8 +152,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.28.2.zip",
-          "sha256": "348d0fb0eeb719febcc3e50ee7018b19a6c13b48491aa43c58a3aee8fbc7d616"
+          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.30.0.zip",
+          "sha256": "6cc94509214204933b21ded9b04545eaa7e21978cbfeea0be2927ba69cb012d8"
         },
         {
           "type": "archive",
