@@ -56,7 +56,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.18.2.1",
+          "tag": "0.18.3.0-flathub",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
