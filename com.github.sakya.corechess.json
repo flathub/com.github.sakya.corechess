@@ -56,7 +56,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.18.2.1",
+          "tag": "0.18.3.0-flathub",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
@@ -152,14 +152,14 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.30.0.zip",
-          "sha256": "6cc94509214204933b21ded9b04545eaa7e21978cbfeea0be2927ba69cb012d8"
+          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.31.0.zip",
+          "sha256": "12b6199699907f0d765eaa7ff7d7c3c64e1bbdef51dccd59829932d34ecd7426"
         },
         {
           "type": "archive",
           "dest": "./libs/lczero-common/",
           "url": "https://github.com/LeelaChessZero/lczero-common/archive/refs/heads/master.zip",
-          "sha256": "14aafc9d3ea1008da3a4ccddf0384ef2e40a90a4a30d61626b3a39bee6b2679e"
+          "sha256": "ce33de444bf17f8c99dd1f4880cae0f29113197022b174435f94428e15d2e51c"
         }
       ]
     },
