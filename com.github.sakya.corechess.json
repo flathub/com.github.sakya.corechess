@@ -159,7 +159,7 @@
           "type": "archive",
           "dest": "./libs/lczero-common/",
           "url": "https://github.com/LeelaChessZero/lczero-common/archive/refs/heads/master.zip",
-          "sha256": "14aafc9d3ea1008da3a4ccddf0384ef2e40a90a4a30d61626b3a39bee6b2679e"
+          "sha256": "ce33de444bf17f8c99dd1f4880cae0f29113197022b174435f94428e15d2e51c"
         }
       ]
     },
