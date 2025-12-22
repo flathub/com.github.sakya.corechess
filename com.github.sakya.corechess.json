@@ -80,11 +80,11 @@
         }
       },
       "build-commands": [
-        "cp nn-5af11540bbfe.nnue ./src",
+        "cp *.nnue ./src",
         "cd src; make -j build ARCH=$ARCH",
         "mkdir -p /app/bin/Engines/stockfish",
         "cp ./src/stockfish /app/bin/Engines/stockfish/",
-        "cp ./nn-5af11540bbfe.nnue /app/bin/Engines/stockfish"
+        "cp ./*.nnue /app/bin/Engines/stockfish"
       ],
       "sources": [
         {
@@ -94,8 +94,8 @@
         },
         {
           "type": "file",
-          "url": "https://tests.stockfishchess.org/api/nn/nn-5af11540bbfe.nnue",
-          "sha256": "5af11540bbfefcb54e38c5dd000cab4b469dfa7599a1d55be5d2722c20a8929b"
+          "url": "https://tests.stockfishchess.org/api/nn/nn-1c0000000000.nnue",
+          "sha256": "1c0000000000a67d629999d932d0c373f7450ce43cd12d0562868f4eaf9ae2ad"
         }
       ]
     },
@@ -162,7 +162,6 @@
         "-Dgtest=false",
         "-Db_lto=true",
         "-Dopencl=false",
-        "-Dabseil=system",
         "-Dabseil_cpp=enabled"
       ],
       "post-install": [
