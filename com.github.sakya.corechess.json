@@ -152,14 +152,14 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.31.2.zip",
-          "sha256": "229273ad25a4948dbd6aa3c0162dc87f19e8e763f3c0ebdc2536cd97039172a8"
+          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.32.1.zip",
+          "sha256": "10bc7bde0fa15d1f4a80615c3137a17d21701133605ce54a9cb23158d0f18bb3"
         },
         {
           "type": "archive",
           "dest": "./libs/lczero-common/",
           "url": "https://github.com/LeelaChessZero/lczero-common/archive/refs/heads/master.zip",
-          "sha256": "ce33de444bf17f8c99dd1f4880cae0f29113197022b174435f94428e15d2e51c"
+          "sha256": "62e3630036e8d2ac8ba615b0d6941f30c22ef83d74a5c379327de157c39bf4bc"
         }
       ]
     },
