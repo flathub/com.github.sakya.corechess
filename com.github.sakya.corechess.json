@@ -143,6 +143,9 @@
         "-DABSL_PROPAGATE_CXX_STD=ON",
         "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
       ],
+      "post-install": [
+        "ls -R /app/lib/cmake | sed 's,^,CMAKE: ,'; true"
+      ],
       "sources": [
         {
           "type": "archive",
@@ -160,13 +163,12 @@
         "-Dopenblas_include=/app/include",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false",
-        "-Dcmake_prefix_path=/app"
+        "-Dopencl=false"
       ],
       "build-options": {
         "env": {
           "CMAKE_PREFIX_PATH": "/app",
-          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig"
+          "MESON_OPTIONS": "--pkg-config-path=/app/lib/pkgconfig --cmake-prefix-path=/app"
         }
       },
       "post-install": [
