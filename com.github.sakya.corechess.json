@@ -161,8 +161,7 @@
         "-Dopenblas_include=/app/include",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false",
-        "-Dabseil_cpp=enabled"
+        "-Dopencl=false"
       ],
       "post-install": [
         "mkdir -p /app/bin/Engines/lc0",
