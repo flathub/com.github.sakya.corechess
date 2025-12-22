@@ -113,6 +113,23 @@
       ]
     },
     {
+      "name": "abseil-cpp",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "config-opts": [
+        "-DABSL_ENABLE_INSTALL=ON",
+        "-DABSL_PROPAGATE_CXX_STD=ON",
+        "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20240116.2.zip",
+          "sha256": "733726b8c3a6a61a8b2c1c73a6e46a5c1f5e29f26c8a7c2b64d0a4f113fb9f2a"
+        }
+      ]
+    },
+    {
       "name": "openblas",
       "no-autogen": true,
       "make-args": [
@@ -141,9 +158,12 @@
       "config-opts": [
         "-Dopenblas=true",
         "-Dopenblas_libdirs=/app/lib",
+        "-Dopenblas_include=/app/include",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false"
+        "-Dopencl=false",
+        "-Dabseil=system",
+        "-Dabseil_cpp=enabled"
       ],
       "post-install": [
         "mkdir -p /app/bin/Engines/lc0",
