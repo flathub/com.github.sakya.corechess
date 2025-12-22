@@ -124,8 +124,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20240116.2.zip",
-          "sha256": "69909dd729932cbbabb9eeaff56179e8d124515f5d3ac906663d573d700b4c7d"
+          "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20250814.1.zip",
+          "sha256": "7a56c409044fe02851302fba09fd00c9e06bd8160278f88e51122c76b44b6c00"
         }
       ]
     },
