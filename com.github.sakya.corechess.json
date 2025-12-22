@@ -113,23 +113,6 @@
       ]
     },
     {
-      "name": "abseil-cpp",
-      "buildsystem": "cmake-ninja",
-      "builddir": true,
-      "config-opts": [
-        "-DABSL_ENABLE_INSTALL=ON",
-        "-DABSL_PROPAGATE_CXX_STD=ON",
-        "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20250814.1.zip",
-          "sha256": "7a56c409044fe02851302fba09fd00c9e06bd8160278f88e51122c76b44b6c00"
-        }
-      ]
-    },
-    {
       "name": "openblas",
       "no-autogen": true,
       "make-args": [
@@ -161,7 +144,8 @@
         "-Dopenblas_include=/app/include",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false"
+        "-Dopencl=false",
+        "--wrap-mode=default"
       ],
       "build-options": {
         "env": {
