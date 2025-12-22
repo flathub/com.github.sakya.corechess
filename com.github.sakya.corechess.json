@@ -99,7 +99,6 @@
         }
       ]
     },
-
     {
       "name": "eigen",
       "buildsystem": "cmake-ninja",
@@ -136,6 +135,23 @@
       ]
     },
     {
+      "name": "abseil-cpp",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "config-opts": [
+        "-DABSL_ENABLE_INSTALL=ON",
+        "-DABSL_PROPAGATE_CXX_STD=ON",
+        "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/abseil/abseil-cpp/releases/download/20240722.0/abseil-cpp-20240722.0.tar.gz",
+          "sha256": "f50e5ac311a81382da7fa75b97310e4b9006474f9560ac46f54a9967f07d4ae3"
+        }
+      ]
+    },
+    {
       "name": "lc0",
       "buildsystem": "meson",
       "config-opts": [
@@ -144,9 +160,14 @@
         "-Dopenblas_include=/app/include",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false",
-        "--wrap-mode=nodownload"
+        "-Dopencl=false"
       ],
+      "build-options": {
+        "env": {
+          "CMAKE_PREFIX_PATH": "/app",
+          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig"
+        }
+      },
       "post-install": [
         "mkdir -p /app/bin/Engines/lc0",
         "mv /app/bin/lc0 /app/bin/Engines/lc0/"
@@ -162,12 +183,6 @@
           "dest": "./libs/lczero-common/",
           "url": "https://github.com/LeelaChessZero/lczero-common/archive/refs/heads/master.zip",
           "sha256": "62e3630036e8d2ac8ba615b0d6941f30c22ef83d74a5c379327de157c39bf4bc"
-        },
-        {
-          "type": "archive",
-          "dest": "subprojects/abseil-cpp",
-          "url": "https://github.com/abseil/abseil-cpp/releases/download/20240722.0/abseil-cpp-20240722.0.tar.gz",
-          "sha256": "f50e5ac311a81382da7fa75b97310e4b9006474f9560ac46f54a9967f07d4ae3"
         }
       ]
     },
