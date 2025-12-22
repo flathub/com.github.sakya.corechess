@@ -160,7 +160,8 @@
         "-Dopenblas_include=/app/include",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false"
+        "-Dopencl=false",
+        "-Dcmake_prefix_path=/app"
       ],
       "build-options": {
         "env": {
