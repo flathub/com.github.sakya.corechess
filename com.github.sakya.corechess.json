@@ -163,6 +163,12 @@
         "-Db_lto=true",
         "-Dopencl=false"
       ],
+      "build-options": {
+        "env": {
+          "CMAKE_PREFIX_PATH": "/app",
+          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig"
+        }
+      },
       "post-install": [
         "mkdir -p /app/bin/Engines/lc0",
         "mv /app/bin/lc0 /app/bin/Engines/lc0/"
