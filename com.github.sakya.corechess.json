@@ -1,10 +1,10 @@
 {
   "app-id": "com.github.sakya.corechess",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "24.08",
+  "runtime-version": "25.08",
   "sdk": "org.freedesktop.Sdk",
   "sdk-extensions": [
-    "org.freedesktop.Sdk.Extension.dotnet8"
+    "org.freedesktop.Sdk.Extension.dotnet10"
   ],
   "cleanup": [
     "/include",
@@ -24,10 +24,10 @@
       "name": "CoreChess",
       "buildsystem": "simple",
       "build-options": {
-        "append-path": "/usr/lib/sdk/dotnet8/bin",
-        "append-ld-library-path": "/usr/lib/sdk/dotnet8/lib",
+        "append-path": "/usr/lib/sdk/dotnet10/bin",
+        "append-ld-library-path": "/usr/lib/sdk/dotnet10/lib",
         "env": {
-          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet8/lib/pkgconfig"
+          "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet10/lib/pkgconfig"
         },
         "arch": {
           "x86_64": {
@@ -56,7 +56,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "v0.18.4.0-flathub",
+          "tag": "v0.18.6.0",
           "url": "https://github.com/sakya/corechess.git"
         },
         "nuget.json"
@@ -80,26 +80,25 @@
         }
       },
       "build-commands": [
-        "cp nn-5af11540bbfe.nnue ./src",
+        "cp *.nnue ./src",
         "cd src; make -j build ARCH=$ARCH",
         "mkdir -p /app/bin/Engines/stockfish",
         "cp ./src/stockfish /app/bin/Engines/stockfish/",
-        "cp ./nn-5af11540bbfe.nnue /app/bin/Engines/stockfish"
+        "cp ./*.nnue /app/bin/Engines/stockfish"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_16.zip",
-          "sha256": "c3252184be37b7249b8c439ff1a78585c460aec533b8e5fb234b113f5bb48274"
+          "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_17.1.zip",
+          "sha256": "8176a590c66780132e3e62bafdde2f46612478af5f6143959792d2230917f828"
         },
         {
           "type": "file",
-          "url": "https://tests.stockfishchess.org/api/nn/nn-5af11540bbfe.nnue",
-          "sha256": "5af11540bbfefcb54e38c5dd000cab4b469dfa7599a1d55be5d2722c20a8929b"
+          "url": "https://tests.stockfishchess.org/api/nn/nn-1c0000000000.nnue",
+          "sha256": "1c0000000000a67d629999d932d0c373f7450ce43cd12d0562868f4eaf9ae2ad"
         }
       ]
     },
-
     {
       "name": "eigen",
       "buildsystem": "cmake-ninja",
@@ -119,7 +118,9 @@
         "DYNAMIC_ARCH=1",
         "FC=gfortran",
         "NO_LAPACKE=1",
-        "USE_OPENMP=0"
+        "USE_OPENMP=0",
+        "NO_TEST=1",
+        "NO_BENCH=1"
       ],
       "make-install-args": [
         "PREFIX=/app"
@@ -130,8 +131,28 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/xianyi/OpenBLAS/archive/refs/tags/v0.3.23.tar.gz",
-          "sha256": "5d9491d07168a5d00116cdc068a40022c3455bf9293c7cb86a65b1054d7e5114"
+          "url": "https://github.com/OpenMathLib/OpenBLAS/archive/refs/tags/v0.3.30.zip",
+          "sha256": "330dde47f5d5c91b3817f914921c994dd761f8258fd32deaa92ad46786a5e784"
+        }
+      ]
+    },
+    {
+      "name": "abseil-cpp",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "config-opts": [
+        "-DABSL_ENABLE_INSTALL=ON",
+        "-DABSL_PROPAGATE_CXX_STD=ON",
+        "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
+      ],
+      "post-install": [
+        "ls -R /app/lib/cmake | sed 's,^,CMAKE: ,'; true"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/abseil/abseil-cpp/releases/download/20240722.0/abseil-cpp-20240722.0.tar.gz",
+          "sha256": "f50e5ac311a81382da7fa75b97310e4b9006474f9560ac46f54a9967f07d4ae3"
         }
       ]
     },
@@ -141,10 +162,17 @@
       "config-opts": [
         "-Dopenblas=true",
         "-Dopenblas_libdirs=/app/lib",
+        "-Dopenblas_include=/app/include",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false"
+        "-Dopencl=false",
+        "--cmake-prefix-path=/app"
       ],
+      "build-options": {
+        "env": {
+          "CMAKE_PREFIX_PATH": "/app"
+        }
+      },
       "post-install": [
         "mkdir -p /app/bin/Engines/lc0",
         "mv /app/bin/lc0 /app/bin/Engines/lc0/"
@@ -152,14 +180,14 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.31.2.zip",
-          "sha256": "229273ad25a4948dbd6aa3c0162dc87f19e8e763f3c0ebdc2536cd97039172a8"
+          "url": "https://github.com/LeelaChessZero/lc0/archive/refs/tags/v0.32.1.zip",
+          "sha256": "10bc7bde0fa15d1f4a80615c3137a17d21701133605ce54a9cb23158d0f18bb3"
         },
         {
           "type": "archive",
           "dest": "./libs/lczero-common/",
           "url": "https://github.com/LeelaChessZero/lczero-common/archive/refs/heads/master.zip",
-          "sha256": "ce33de444bf17f8c99dd1f4880cae0f29113197022b174435f94428e15d2e51c"
+          "sha256": "62e3630036e8d2ac8ba615b0d6941f30c22ef83d74a5c379327de157c39bf4bc"
         }
       ]
     },
