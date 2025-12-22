@@ -118,7 +118,9 @@
         "DYNAMIC_ARCH=1",
         "FC=gfortran",
         "NO_LAPACKE=1",
-        "USE_OPENMP=0"
+        "USE_OPENMP=0",
+        "NO_TEST=1",
+        "NO_BENCH=1"
       ],
       "make-install-args": [
         "PREFIX=/app"
@@ -163,12 +165,12 @@
         "-Dopenblas_include=/app/include",
         "-Dgtest=false",
         "-Db_lto=true",
-        "-Dopencl=false"
+        "-Dopencl=false",
+        "--cmake-prefix-path=/app"
       ],
       "build-options": {
         "env": {
-          "CMAKE_PREFIX_PATH": "/app",
-          "MESON_OPTIONS": "--pkg-config-path=/app/lib/pkgconfig --cmake-prefix-path=/app"
+          "CMAKE_PREFIX_PATH": "/app"
         }
       },
       "post-install": [
