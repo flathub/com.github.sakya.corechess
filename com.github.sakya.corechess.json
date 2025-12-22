@@ -89,8 +89,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_16.zip",
-          "sha256": "c3252184be37b7249b8c439ff1a78585c460aec533b8e5fb234b113f5bb48274"
+          "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_17.1.zip",
+          "sha256": "8176a590c66780132e3e62bafdde2f46612478af5f6143959792d2230917f828"
         },
         {
           "type": "file",
@@ -130,8 +130,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/xianyi/OpenBLAS/archive/refs/tags/v0.3.23.tar.gz",
-          "sha256": "5d9491d07168a5d00116cdc068a40022c3455bf9293c7cb86a65b1054d7e5114"
+          "url": "https://github.com/OpenMathLib/OpenBLAS/archive/refs/tags/v0.3.30.zip",
+          "sha256": "330dde47f5d5c91b3817f914921c994dd761f8258fd32deaa92ad46786a5e784"
         }
       ]
     },
